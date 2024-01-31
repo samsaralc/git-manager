@@ -1,0 +1,18 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+workspace --> index: git add
+index --> localRepo: git commit
+localRepo --> remoteRepo: git push
+localRepo <-- remoteRepo : git fetch
+workspace <-- remoteRepo : git pull
+index<-- localRepo : git merge
+@enduml
+
+
+remoteRepo远程仓库
+workspace本地工作目录
+localRepo本地仓库
+index暂存区
