@@ -48,3 +48,6 @@ func (uc *GreeterUsecase) CreateGreeter(ctx context.Context, g *Greeter) (*Greet
 func login() {
 	print("login")
 }
+func logout() {
+	print("logout")
+}
